@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
+    API_ID    = os.environ.get("API_ID", "21014933")
     API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7752128731:AAE4pinRB-xPLlt0prBDnn2wvS2sRxIoKyw") 
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://MOTI:MOTI@cluster0.ropap.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6045160821').split()]
+    # -- FORCE_SUB_CHANNELS = ["You_Want_To_Know_Me","You_Want_To_Know_Me","You_Want_To_Know_Me"] -- # 
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'You_Want_To_Know_Me,You_Want_To_Know_Me').split(',')
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     PORT = int(os.environ.get("PORT", ""))
     
